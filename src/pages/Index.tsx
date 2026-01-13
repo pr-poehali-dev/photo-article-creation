@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
@@ -31,9 +32,24 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-light tracking-tight mb-6">
             Fosi Audio DA2120B
           </h1>
-          <p className="text-xl text-muted-foreground font-light">
+          <p className="text-xl text-muted-foreground font-light mb-8">
             Компактный усилитель класса D с блоком питания 24В
           </p>
+          <Button 
+            size="lg"
+            className="group"
+            asChild
+          >
+            <a 
+              href="https://market.yandex.ru/cc/8WcR4N" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Icon name="ShoppingCart" size={20} />
+              Купить на Яндекс Маркете
+              <Icon name="ExternalLink" size={16} className="ml-1 group-hover:translate-x-0.5 transition-transform" />
+            </a>
+          </Button>
         </header>
 
         <div className="mb-20 animate-fade-in">
